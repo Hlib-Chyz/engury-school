@@ -13,7 +13,7 @@ export default function SomethingWentWrongModal() {
           <h2>
             Щось пішло <br></br> не так !
           </h2>
-          <Button>
+          {/* <Button>
             <div className={styles["button-content"]}>
               <span>Спробувати іще раз</span>
               <Image
@@ -23,7 +23,7 @@ export default function SomethingWentWrongModal() {
                 alt="Arrow to right with white color"
               />
             </div>
-          </Button>
+          </Button> */}
         </div>
         <div className={styles["image"]}>
           <Image

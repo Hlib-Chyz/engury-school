@@ -1,0 +1,49 @@
+import Review from "@components/reviews/review/review";
+import React from "react";
+import styles from "./reviews.module.scss";
+
+export default function Reviews() {
+  const reviews = [
+    {
+      name: "Karina",
+      date: "20 серпня",
+      text: "Очень понравился базовый курс !😍🤩👍",
+    },
+    {
+      name: "Karina",
+      date: "20 серпня",
+      text: "Очень понравился базовый курс !😍🤩👍",
+    },
+    {
+      name: "Кирил",
+      date: "01 червня",
+      text: "Хорошие преподаватели !😎Невероятный опыт изучения языка!💪",
+    },
+    {
+      name: "Олег",
+      date: "16 вересня",
+      text: "Неплохой курс!👍",
+    },
+    {
+      name: "Francis",
+      date: "24 червня",
+      text: "A very interesting school. He worked there as a native speaker. I love it very much!",
+    },
+    {
+      name: "София",
+      date: "14 червня",
+      text: "Невероятно приятная атмосфера !Школа - супер😍🤩",
+    },
+  ];
+
+  return (
+    <div className={styles.container}>
+      <h3>Відгуки учнів</h3>
+      <div className={styles.reviews}>
+        {reviews.map((review) => (
+          <Review review={review} key={review.name} />
+        ))}
+      </div>
+    </div>
+  );
+}
