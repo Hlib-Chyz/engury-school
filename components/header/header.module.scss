@@ -1,0 +1,31 @@
+.container {
+  margin: 65px 0 50px;
+  .logo {
+    margin-bottom: 45px;
+    h3 {
+      font-size: 50px;
+      font-weight: 700;
+      line-height: 1.5;
+
+      color: #4f5f3a;
+    }
+  }
+  nav {
+    ul {
+      display: flex;
+      li {
+        margin-right: 45px;
+
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 1.5;
+
+        color: #414e31;
+
+        a {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
