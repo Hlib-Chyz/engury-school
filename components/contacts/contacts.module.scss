@@ -1,36 +1,37 @@
-.container {
-  padding: 100px 138px;
+.wrapper {
+  .container {
+    max-width: 1440px;
+    padding: 0 138px;
+    margin: 0 auto;
 
-  background-color: #4f5f3a;
-
-  display: flex;
-  justify-content: space-between;
-
-  color: #fafafa;
-
-  .logo {
-    font-weight: 700;
-    font-size: 50px;
-  }
-
-  ul {
-    li {
+    h3 {
       font-weight: 400;
-      font-size: 25px;
+      font-size: 60px;
+      color: #4f5f3a;
 
-      margin-bottom: 30px;
+      margin-bottom: 70px;
+      text-align: center;
     }
 
-    li:last-child {
-      margin-bottom: 0;
-    }
-  }
+    ul {
+      li {
+        margin-bottom: 26px;
 
-  .phone {
-    .number-phone {
-      font-weight: 400;
-      font-size: 25px;
-      margin-left: 5px;
+        display: flex;
+        align-items: center;
+        .text {
+          font-weight: 400;
+          font-size: 40px;
+          color: #fafafa;
+
+          margin-left: 16px;
+        }
+      }
+    }
+
+    .line {
+      height: 1px;
+      background-color: #fafafa;
     }
   }
 }

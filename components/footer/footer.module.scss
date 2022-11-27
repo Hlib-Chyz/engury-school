@@ -1,5 +1,4 @@
 .wrapepr {
-  background-color: #4f5f3a;
   .container {
     max-width: 1440px;
     padding: 100px 138px;
@@ -17,9 +16,10 @@
 
     ul {
       li {
-        font-weight: 400;
-        font-size: 25px;
-
+        a {
+          font-weight: 400;
+          font-size: 25px;
+        }
         margin-bottom: 30px;
       }
 

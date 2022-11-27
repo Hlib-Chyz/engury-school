@@ -9,17 +9,31 @@ export default function Footer() {
         <div className={styles.logo}>ENGORY</div>
         <div>
           <ul>
-            <li>Про нас</li>
-            <li>Курси</li>
-            <li>Викладачі</li>
-            <li>Відгуки</li>
+            <li>
+              <a>Про нас</a>
+            </li>
+            <li>
+              <a>Курси</a>
+            </li>
+            <li>
+              <a>Викладачі</a>
+            </li>
+            <li>
+              <a>Відгуки</a>
+            </li>
           </ul>
         </div>
         <div>
           <ul>
-            <li>Записатися на урок</li>
-            <li>Новини</li>
-            <li>Акції</li>
+            <li>
+              <a>Записатися на урок</a>
+            </li>
+            <li>
+              <a>Новини</a>
+            </li>
+            <li>
+              <a>Акції</a>
+            </li>
           </ul>
         </div>
         <div className={styles.phone}>

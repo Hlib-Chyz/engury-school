@@ -4,6 +4,7 @@ import Subheader from "@components/subheader/subheader";
 import Reviews from "@components/reviews/reviews";
 import React from "react";
 import Footer from "@components/footer/footer";
+import Contacts from "@components/contacts/contacts";
 
 export default function Home() {
   return (
@@ -12,7 +13,10 @@ export default function Home() {
       <Subheader />
       <AboutUs />
       <Reviews />
-      <Footer />
+      <div className="wrapper-contacts-footer">
+        <Contacts />
+        <Footer />
+      </div>
     </div>
   );
 }
