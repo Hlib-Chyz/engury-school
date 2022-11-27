@@ -1,0 +1,39 @@
+.wrapepr {
+  background-color: #4f5f3a;
+  .container {
+    max-width: 1440px;
+    padding: 100px 138px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+
+    color: #fafafa;
+
+    .logo {
+      font-weight: 700;
+      font-size: 50px;
+    }
+
+    ul {
+      li {
+        font-weight: 400;
+        font-size: 25px;
+
+        margin-bottom: 30px;
+      }
+
+      li:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .phone {
+      .number-phone {
+        font-weight: 400;
+        font-size: 25px;
+        margin-left: 5px;
+      }
+    }
+  }
+}
