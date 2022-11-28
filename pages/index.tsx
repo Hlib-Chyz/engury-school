@@ -5,6 +5,7 @@ import Reviews from "@components/reviews/reviews";
 import React from "react";
 import Footer from "@components/footer/footer";
 import Contacts from "@components/contacts/contacts";
+import WhyWe from "@components/why-we/why-we";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Header />
       <Subheader />
       <AboutUs />
+      <WhyWe />
       <Reviews />
       <div className="wrapper-contacts-footer">
         <Contacts />

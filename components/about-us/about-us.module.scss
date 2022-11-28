@@ -1,6 +1,9 @@
 .container {
   display: flex;
-  margin: 150px 0;
+
+  max-width: 1440px;
+  margin: 150px auto;
+  padding: 0 138px;
 
   section {
     margin: auto 0 auto 18px;
