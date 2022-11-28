@@ -6,6 +6,9 @@ import React from "react";
 import Footer from "@components/footer/footer";
 import Contacts from "@components/contacts/contacts";
 import WhyWe from "@components/why-we/why-we";
+import OurCourses from "@components/our-courses/our-courses";
+import Enroll from "@components/enroll/enroll";
+import OurTeachers from "@components/our-teachers/our-teachers";
 
 export default function Home() {
   return (
@@ -14,6 +17,9 @@ export default function Home() {
       <Subheader />
       <AboutUs />
       <WhyWe />
+      <OurCourses />
+      <Enroll />
+      <OurTeachers />
       <Reviews />
       <div className="wrapper-contacts-footer">
         <Contacts />

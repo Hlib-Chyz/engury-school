@@ -1,0 +1,149 @@
+.container {
+  padding: 64px 24px;
+  width: 415px;
+
+  background-color: #fafafa;
+  box-shadow: 0px 10px 50px rgba(80, 96, 59, 0.19);
+  border-radius: 31px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h4 {
+    font-weight: 400;
+    font-size: 50px;
+
+    color: #4f5f3a;
+
+    margin-bottom: 32px;
+  }
+
+  .level {
+    display: flex;
+    align-items: flex-start;
+
+    label {
+      color: #0e1801;
+
+      font-weight: 400;
+      font-size: 20px;
+
+      margin-right: 40px;
+    }
+
+    .line-of-level {
+      .line-0,
+      .line-1,
+      .line-2 {
+        width: 225px;
+        height: 3px;
+
+        background-color: #d9d9d9;
+        border-radius: 15px;
+
+        position: relative;
+        &:before {
+          content: "";
+          display: block;
+          position: absolute;
+          top: -2px;
+          left: 0;
+
+          height: 6px;
+
+          background-color: #4f5f3a;
+          border-radius: 15px;
+        }
+      }
+
+      .line-0 {
+        &:before {
+          width: 76px;
+        }
+      }
+      .line-1 {
+        &:before {
+          width: 150px;
+        }
+      }
+      .line-2 {
+        &:before {
+          width: 225px;
+        }
+      }
+
+      .levels {
+        font-weight: 400;
+        font-size: 15px;
+
+        color: #0e1801;
+
+        display: flex;
+        margin-top: 6px;
+        .a1 {
+          margin-left: 9px;
+        }
+        .b1,
+        .b2 {
+          margin-left: 53px;
+        }
+      }
+    }
+  }
+
+  .price {
+    margin: 40px 0;
+
+    div {
+      margin-bottom: 8px;
+
+      font-weight: 400;
+      font-size: 30px;
+
+      color: #4f5f3a;
+    }
+  }
+
+  .what-have {
+    margin-left: 34px;
+    align-self: flex-start;
+    li {
+      font-weight: 400;
+      font-size: 18px;
+
+      color: #0e1801;
+
+      margin-bottom: 10px;
+
+      display: flex;
+      align-items: center;
+      &:before {
+        content: "";
+        display: block;
+
+        background-color: #4f5f3a;
+
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        margin-right: 16px;
+      }
+    }
+  }
+
+  button {
+    margin-top: 26px;
+    padding: 20px 22px;
+
+    background-color: #4f5f3a;
+    color: #fafafa;
+
+    font-weight: 700;
+    font-size: 20px;
+
+    border-radius: 11px;
+    border: none;
+    outline: none;
+  }
+}
