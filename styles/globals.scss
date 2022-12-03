@@ -10,6 +10,8 @@ h4,
 h5,
 h6 {
   font-family: "DelaGothicOne";
+  font-style: normal;
+  font-weight: 400;
 }
 
 html,
@@ -20,6 +22,12 @@ body {
   font-family: "Actay";
   font-style: normal;
   font-weight: 400;
+}
+
+button {
+  font-family: "Actay";
+  font-style: normal;
+  font-weight: 700;
 }
 
 ul {
@@ -44,4 +52,10 @@ a {
 .wrapper-contacts-footer {
   background-image: url(".././images/footer-background.svg");
   background-size: cover;
+}
+
+.wrapper-our-courses {
+  background-image: url(".././images/background-our-courses.svg");
+  background-repeat: no-repeat;
+  background-position: top 185px center;
 }

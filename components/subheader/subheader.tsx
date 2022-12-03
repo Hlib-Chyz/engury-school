@@ -1,4 +1,4 @@
-import teenagerKangaroo from "@images/teenager-kangaroo.svg";
+import teenagerKangarooWithPhone from "@images/teenager-kangaroo-with-phone.svg";
 import arrowRightGreen from "@images/arrow-right-green.svg";
 import englandFlag from "@images/england-flag.svg";
 import spanishFlag from "@images/spanish-flag.svg";
@@ -26,7 +26,7 @@ export default function Subheader() {
         </div>
         <div>
           <Image
-            src={teenagerKangaroo}
+            src={teenagerKangarooWithPhone}
             width="471"
             height="606"
             alt="Teenager Kangaroo"

@@ -1,12 +1,17 @@
 import Image from "next/image";
 import styles from "./about-us.module.scss";
-import proKangaroo from "@images/pro-kangaroo.svg";
+import proKangarooWithBook from "@images/pro-kangaroo-with-book.svg";
 
 export default function AboutUs() {
   return (
     <div className={styles.container}>
       <div>
-        <Image src={proKangaroo} width="462" height="450" alt="Pro Kangaroo" />
+        <Image
+          src={proKangarooWithBook}
+          width="462"
+          height="450"
+          alt="Pro Kangaroo"
+        />
       </div>
       <section>
         <h3>

@@ -35,6 +35,14 @@
 
       font-weight: 700;
       font-size: 35px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      span {
+        margin-right: 21px;
+      }
     }
   }
 }

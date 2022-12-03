@@ -1,3 +1,5 @@
+@import "/styles/variables.scss";
+
 .container {
   max-width: 1440px;
   margin: 150px auto;
@@ -9,6 +11,8 @@
   position: relative;
   h3 {
     font-size: 60px;
+
+    color: $white;
 
     margin-bottom: 100px;
   }
@@ -56,11 +60,11 @@
   }
 
   .palm-first {
-    top: 0;
+    top: 180px;
     right: 0;
   }
   .palm-second {
-    bottom: 0;
+    bottom: 180px;
     left: 0;
   }
 }

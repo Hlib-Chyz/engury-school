@@ -2,7 +2,7 @@
 
 .container {
   padding: 64px 24px;
-  width: 415px;
+  // width: 415px;
 
   background-color: $white;
   box-shadow: 0px 10px 50px rgba(80, 96, 59, 0.19);
@@ -97,7 +97,8 @@
     div {
       margin-bottom: 8px;
 
-      font-size: 30px;
+      font-size: 28px;
+      font-weight: 700;
 
       color: $green-main;
     }

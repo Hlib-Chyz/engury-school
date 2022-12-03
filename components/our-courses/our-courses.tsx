@@ -3,8 +3,8 @@ import React from "react";
 import styles from "./our-courses.module.scss";
 import Image from "next/image";
 import youngKangarro from "@images/young-kangarro.svg";
-import teenagerKangaroo from "@images/teenager-kangaroo.svg";
-import proKangarro from "@images/pro-kangaroo.svg";
+import teenagerKangarooWitBbackpack from "@images/teenager-kangaroo-with-backpack.svg";
+import proKangarroWithBackground from "@images/pro-kangaroo-with-background.svg";
 import palmOurCourse1 from "@images/palm-our-course-1.svg";
 import palmOurCourse2 from "@images/palm-our-course-2.svg";
 
@@ -17,8 +17,8 @@ export default function OurCourses() {
           <Course
             heading="Light"
             level={Levels.A1A2}
-            price1="1200 /2000 uan - 55 min"
-            price2="1700 /2900 uan - 55 min"
+            price1="1200/2000 uan - 55 min"
+            price2="1700/2900 uan - 55 min"
             whatHave={[
               "4 lessons / month",
               "1 speaking club",
@@ -35,7 +35,7 @@ export default function OurCourses() {
         </div>
         <div className={styles["course-2"]}>
           <Image
-            src={teenagerKangaroo}
+            src={teenagerKangarooWitBbackpack}
             width="394"
             height="635"
             alt="Pro Kangaroo"
@@ -68,7 +68,7 @@ export default function OurCourses() {
             ]}
           />
           <Image
-            src={proKangarro}
+            src={proKangarroWithBackground}
             width="476"
             height="451"
             alt="Pro Kangaroo"
