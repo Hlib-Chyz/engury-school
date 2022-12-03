@@ -1,5 +1,7 @@
+@import "/styles/variables.scss";
+
 .container {
-  background-color: #fafafa;
+  background-color: $white;
   box-shadow: 0px 10px 50px rgba(80, 96, 58, 0.2);
   border-radius: 62px;
 
@@ -13,9 +15,8 @@
   align-items: center;
 
   .text {
-    font-weight: 400;
     font-size: 25px;
 
-    color: #4f5f3a;
+    color: $green-main;
   }
 }

@@ -1,13 +1,14 @@
+@import "/styles/variables.scss";
+
 .container {
   max-width: 1440px;
   margin: 150px auto;
   padding: 0 138px;
 
   h3 {
-    font-weight: 400;
     font-size: 60px;
 
-    color: #d17340;
+    color: $orange-main;
 
     text-align: center;
 
@@ -28,7 +29,7 @@
       height: 85px;
       width: 85px;
 
-      background-color: #d17340;
+      background-color: $orange-main;
       border-radius: 50%;
 
       display: flex;
@@ -53,16 +54,15 @@
         font-weight: 700;
         font-size: 50px;
 
-        color: #4f5f3a;
+        color: $green-main;
 
         margin-bottom: 34px;
       }
 
       h5 {
-        font-weight: 400;
         font-size: 20px;
 
-        color: #0e1801;
+        color: $black-text;
 
         margin-bottom: 31px;
       }
@@ -79,10 +79,9 @@
         }
 
         p {
-          font-weight: 400;
           font-size: 25px;
 
-          color: #414e31;
+          color: $green-dark;
 
           padding: 16px 18px 0;
           width: 390px;
@@ -107,13 +106,12 @@
         max-width: 295px;
         padding: 22px 38px;
 
-        background-color: #d17340;
+        background-color: $orange-main;
         border-radius: 44px;
 
-        font-weight: 400;
         font-size: 20px;
 
-        color: #fafafa;
+        color: $white;
       }
     }
   }

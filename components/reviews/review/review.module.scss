@@ -1,3 +1,5 @@
+@import "/styles/variables.scss";
+
 .container {
   max-width: 368px;
   height: 196px;
@@ -5,7 +7,7 @@
   border-radius: 32px;
   padding: 21px;
 
-  background-color: #fafafa;
+  background-color: $white;
   box-shadow: 0px 10.2195px 51.0975px rgba(80, 96, 58, 0.2);
 
   .top {
@@ -27,23 +29,20 @@
       .name {
         margin-bottom: 5px;
 
-        font-weight: 400;
         font-size: 31px;
-        color: #414e31;
+        color: $green-dark;
       }
       .date {
-        font-weight: 400;
         font-size: 21px;
 
-        color: #0e1801;
+        color: $black-text;
       }
     }
   }
 
   .text {
-    font-weight: 400;
     font-size: 20px;
 
-    color: #0e1801;
+    color: $black-text;
   }
 }

@@ -1,18 +1,19 @@
+@import "/styles/variables.scss";
+
 .container {
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 138px;
 
   h3 {
-    font-weight: 400;
     font-size: 60px;
 
-    color: #4f5f3a;
+    color: $green-main;
 
     text-align: center;
 
     span {
-      color: #d17340;
+      color: $orange-main;
     }
   }
 

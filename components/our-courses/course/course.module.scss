@@ -1,8 +1,10 @@
+@import "/styles/variables.scss";
+
 .container {
   padding: 64px 24px;
   width: 415px;
 
-  background-color: #fafafa;
+  background-color: $white;
   box-shadow: 0px 10px 50px rgba(80, 96, 59, 0.19);
   border-radius: 31px;
 
@@ -11,10 +13,9 @@
   align-items: center;
 
   h4 {
-    font-weight: 400;
     font-size: 50px;
 
-    color: #4f5f3a;
+    color: $green-main;
 
     margin-bottom: 32px;
   }
@@ -24,9 +25,8 @@
     align-items: flex-start;
 
     label {
-      color: #0e1801;
+      color: $black-text;
 
-      font-weight: 400;
       font-size: 20px;
 
       margin-right: 40px;
@@ -52,7 +52,7 @@
 
           height: 6px;
 
-          background-color: #4f5f3a;
+          background-color: $green-main;
           border-radius: 15px;
         }
       }
@@ -74,10 +74,9 @@
       }
 
       .levels {
-        font-weight: 400;
         font-size: 15px;
 
-        color: #0e1801;
+        color: $black-text;
 
         display: flex;
         margin-top: 6px;
@@ -98,10 +97,9 @@
     div {
       margin-bottom: 8px;
 
-      font-weight: 400;
       font-size: 30px;
 
-      color: #4f5f3a;
+      color: $green-main;
     }
   }
 
@@ -109,10 +107,9 @@
     margin-left: 34px;
     align-self: flex-start;
     li {
-      font-weight: 400;
       font-size: 18px;
 
-      color: #0e1801;
+      color: $black-text;
 
       margin-bottom: 10px;
 
@@ -122,7 +119,7 @@
         content: "";
         display: block;
 
-        background-color: #4f5f3a;
+        background-color: $green-main;
 
         height: 10px;
         width: 10px;
@@ -136,8 +133,8 @@
     margin-top: 26px;
     padding: 20px 22px;
 
-    background-color: #4f5f3a;
-    color: #fafafa;
+    background-color: $green-main;
+    color: $white;
 
     font-weight: 700;
     font-size: 20px;

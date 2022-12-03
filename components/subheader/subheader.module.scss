@@ -1,5 +1,7 @@
+@import "/styles/variables.scss";
+
 .wrapper {
-  background-color: #50603a;
+  background-color: $green-main;
   .container {
     position: relative;
 
@@ -15,22 +17,21 @@
     .text {
       h1 {
         font-style: normal;
-        font-weight: 400;
+
         font-size: 50px;
 
-        color: #fafafa;
+        color: $white;
         margin-bottom: 45px;
       }
 
       button {
-        background-color: #fafafa;
-        color: #4f5f3a;
+        background-color: $white;
+        color: $green-main;
 
         padding: 27px 39px;
         border: none;
         border-radius: 40px;
 
-        font-weight: 400;
         font-size: 30px;
 
         display: flex;
@@ -73,7 +74,7 @@
       color: white;
       font-weight: 700;
 
-      border: 3px solid #fafafa;
+      border: 3px solid $white;
       height: 75px;
 
       display: flex;
