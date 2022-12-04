@@ -1,6 +1,9 @@
 @import "/styles/variables.scss";
 
 .container {
+  max-width: 1440px;
+  padding: 0 138px;
+  margin: 0 auto;
   h3 {
     font-size: 60px;
 
@@ -11,7 +14,7 @@
   }
 
   .reviews {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 }

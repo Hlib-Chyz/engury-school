@@ -27,7 +27,7 @@ export default function Reviews() {
     {
       name: "Francis",
       date: "24 червня",
-      text: "A very interesting school. He worked there as a native speaker. I love it very much!",
+      text: "A very interesting school. He worked there as a native speaker. I love it very asfnjhgchjhjgvfcvbhjnkhgjvcfhvbnjkhbv bbnhjkbgnvmuch!",
     },
     {
       name: "София",
