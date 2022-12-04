@@ -11,8 +11,8 @@ export default function Modal({ children }: { children: ReactNode }) {
         <button className={styles.cross}>
           <Image
             src={crossWhite}
-            width="22"
-            height="22"
+            width="25"
+            height="25"
             alt="Teenager Kangaroo"
           />
         </button>

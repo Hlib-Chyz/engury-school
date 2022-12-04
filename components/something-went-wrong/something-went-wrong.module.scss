@@ -1,50 +1,44 @@
+@import "/styles/variables.scss";
+
 .container {
+  width: 1060px;
+  height: 578px;
+  padding: 0 65px;
+
   display: flex;
+  justify-content: flex-end;
+  align-items: center;
 
-  padding: 0 70px;
-  .text {
-    margin: auto 0;
-    h2 {
-      color: $orange-main;
-
+  div {
+    margin-right: 28px;
+    h3 {
       font-size: 70px;
+
+      color: $orange-main;
 
       margin-bottom: 30px;
     }
+    button {
+      background-color: $orange-main;
+      color: $white;
 
-    .button-content {
+      font-weight: 700;
+      font-size: 25px;
+      cursor: pointer;
+
+      outline: none;
+      border: none;
+      border-radius: 40px;
+
+      width: 435px;
+      height: 90px;
+
       display: flex;
       align-items: center;
+      justify-content: center;
 
       span {
         margin-right: 30px;
-      }
-    }
-  }
-
-  .image {
-    .teenager-kangaroo {
-      width: 420px;
-      height: 578px;
-    }
-  }
-}
-
-@media (max-width: 500px) {
-  .container {
-    padding: 32px 14px;
-    flex-direction: column-reverse;
-
-    .text {
-      h2 {
-        font-size: 48px;
-      }
-    }
-
-    .image {
-      .teenager-kangaroo {
-        width: 262px;
-        height: 348px;
       }
     }
   }
