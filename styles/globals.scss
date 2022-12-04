@@ -1,3 +1,5 @@
+@import "/styles/variables.scss";
+
 * {
   margin: 0;
   padding: 0;
@@ -58,4 +60,19 @@ a {
   background-image: url(".././images/background-our-courses.svg");
   background-repeat: no-repeat;
   background-position: top 185px center;
+}
+
+.slick-prev,
+.slick-next {
+  height: 85px !important;
+  width: 85px !important;
+
+  &:before {
+    content: "" !important;
+    color: black !important;
+    opacity: 1 !important;
+  }
+
+  background-color: $orange-main !important;
+  border-radius: 50%;
 }

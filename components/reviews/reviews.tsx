@@ -10,7 +10,7 @@ export default function Reviews() {
       text: "Очень понравился базовый курс !😍🤩👍",
     },
     {
-      name: "Karina",
+      name: "sas",
       date: "20 серпня",
       text: "Очень понравился базовый курс !😍🤩👍",
     },
