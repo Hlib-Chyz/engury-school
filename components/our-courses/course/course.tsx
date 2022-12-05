@@ -1,3 +1,5 @@
+import Link from "next/link";
+import React from "react";
 import styles from "./course.module.scss";
 
 export default function Course({
@@ -36,7 +38,9 @@ export default function Course({
           <li key={item}>{item}</li>
         ))}
       </ul>
-      <button>Записатися на курс</button>
+      <Link href="/form">
+        <button>Записатися на курс</button>
+      </Link>
     </div>
   );
 }

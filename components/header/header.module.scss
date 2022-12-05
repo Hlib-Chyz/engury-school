@@ -3,7 +3,7 @@
 .container {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 50px 138px;
+  padding: 50px 138px 0;
 
   .logo {
     margin-bottom: 45px;
@@ -15,14 +15,13 @@
     }
   }
   nav {
+    color: $green-dark;
     ul {
       display: flex;
       li {
         margin-right: 45px;
 
         font-size: 25px;
-
-        color: $green-dark;
 
         a {
           cursor: pointer;

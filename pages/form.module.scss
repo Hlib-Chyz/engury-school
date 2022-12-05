@@ -1,0 +1,102 @@
+@import "/styles/variables.scss";
+
+.container {
+  max-width: 1440px;
+  margin: 20px auto 0;
+  padding: 0 138px;
+
+  .palm {
+    position: absolute;
+    top: 320px;
+    right: 0;
+  }
+
+  .bread-crumbs {
+    display: flex;
+    align-items: center;
+
+    color: $green-main;
+    font-size: 20px;
+
+    img {
+      margin: 0 8px;
+    }
+
+    .opacity-text {
+      opacity: 0.6;
+    }
+  }
+
+  h4 {
+    font-family: "Actay";
+    font-size: 40px;
+    font-weight: 700;
+
+    color: #d17340;
+
+    margin: 50px 0 60px;
+  }
+
+  .languages {
+    margin-bottom: 45px;
+    div {
+      display: flex;
+      align-items: center;
+      .languages-label {
+        font-size: 35px;
+        color: $green-dark;
+
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .inputs {
+    div {
+      input {
+        margin-right: 52px;
+      }
+
+      &:first-child {
+        margin-bottom: 32px;
+      }
+    }
+  }
+
+  .checkbox {
+    margin: 24px 0 54px;
+    display: flex;
+    align-items: center;
+
+    .label-checkbox {
+      color: $green-dark;
+      font-size: 20px;
+
+      margin-left: 4px;
+    }
+  }
+
+  button {
+    background-color: $orange-main;
+    color: $white;
+
+    width: 435px;
+    height: 90px;
+    margin-bottom: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    border-radius: 40px;
+    outline: none;
+
+    span {
+      margin-right: 30px;
+
+      font-weight: 700;
+      font-size: 25px;
+    }
+  }
+}

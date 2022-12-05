@@ -1,9 +1,41 @@
+@import "/styles/variables.scss";
+
 .input {
-  border: 1px solid orange;
+  border: 1px solid #bb4604;
   border-radius: 40px;
-  padding: 24px 27px;
   outline: none;
+  width: 310px;
+  height: 70px;
+  padding: 0 27px;
 
   font-size: 20px;
-  color: orange;
+  color: $orange-main;
+  opacity: 0.6;
+
+  transition: 0.3s;
+
+  &::placeholder {
+    font-size: 20px;
+    color: $orange-main;
+    opacity: 0.6;
+  }
+
+  &:focus,
+  &:active,
+  &:hover {
+    border-color: $orange-main;
+    opacity: 1;
+  }
+
+  &:valid {
+    border-color: $green-main;
+    color: $green-main;
+    opacity: 1;
+  }
+
+  &:invalid {
+    border-color: #ad1519;
+    color: #ad1519;
+    opacity: 1;
+  }
 }

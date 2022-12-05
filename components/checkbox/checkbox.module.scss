@@ -1,0 +1,49 @@
+@import "/styles/variables.scss";
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  input {
+    width: 0;
+    height: 0;
+
+    &:after {
+      content: "";
+      display: block;
+
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: $green-dark;
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &:checked {
+      &:before {
+        content: url("/images/check-mark.svg");
+        display: block;
+
+        width: 8px;
+        height: 6px;
+
+        position: absolute;
+        z-index: 100;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    &:disabled {
+      &:before,
+      &:after {
+        opacity: 0.4;
+      }
+    }
+  }
+}

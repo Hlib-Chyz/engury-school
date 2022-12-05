@@ -5,6 +5,7 @@ import spanishFlag from "@images/spanish-flag.svg";
 import Image from "next/image";
 import React from "react";
 import styles from "./subheader.module.scss";
+import Link from "next/link";
 
 export default function Subheader() {
   return (
@@ -14,15 +15,17 @@ export default function Subheader() {
           <h1>
             Вивчайте іноземну <br></br> мову з будь -якої <br></br> точки світу
           </h1>
-          <button>
-            <span>Записатися на курс</span>
-            <Image
-              src={arrowRightGreen}
-              width="24"
-              height="38"
-              alt="arrowRightGreen"
-            />
-          </button>
+          <Link href="/form">
+            <button>
+              <span>Записатися на курс</span>
+              <Image
+                src={arrowRightGreen}
+                width="24"
+                height="38"
+                alt="arrowRightGreen"
+              />
+            </button>
+          </Link>
         </div>
         <div>
           <Image

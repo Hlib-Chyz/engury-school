@@ -1,12 +1,12 @@
 import styles from "./header.module.scss";
 
-export default function Header() {
+export default function Header({ isOrange }: { isOrange?: boolean }) {
   return (
     <div className={styles.container}>
       <div className={styles.logo}>
-        <h3>ENGORY</h3>
+        <h3 style={isOrange ? { color: "#d17340" } : {}}>ENGORY</h3>
       </div>
-      <nav>
+      <nav style={isOrange ? { color: "#d17340" } : {}}>
         <ul>
           <li>
             <a>Про нас</a>

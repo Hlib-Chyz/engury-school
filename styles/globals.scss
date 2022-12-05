@@ -30,6 +30,8 @@ button {
   font-family: "Actay";
   font-style: normal;
   font-weight: 700;
+
+  cursor: pointer;
 }
 
 ul {
@@ -53,7 +55,8 @@ a {
 
 .wrapper-contacts-footer {
   background-image: url(".././images/footer-background.svg");
-  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .wrapper-our-courses {

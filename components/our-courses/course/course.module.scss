@@ -129,19 +129,23 @@
       }
     }
   }
-
-  button {
-    margin-top: 26px;
-    padding: 20px 22px;
-
-    background-color: $green-main;
-    color: $white;
-
-    font-weight: 700;
-    font-size: 20px;
-
+  a {
     border-radius: 11px;
-    border: none;
-    outline: none;
+    margin-top: 26px;
+
+    button {
+      width: 274px;
+      height: 70px;
+
+      background-color: $green-main;
+      color: $white;
+
+      font-weight: 700;
+      font-size: 20px;
+
+      border-radius: 11px;
+      border: none;
+      outline: none;
+    }
   }
 }

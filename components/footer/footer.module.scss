@@ -1,37 +1,39 @@
 @import "/styles/variables.scss";
+.wrapper {
+  background-color: $green-main;
 
-.container {
-  max-width: 1440px;
-  padding: 100px 138px;
-  margin: 0 auto;
+  .container {
+    max-width: 1440px;
+    padding: 50px 138px;
+    margin: 0 auto;
 
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 
-  color: $white;
+    color: $white;
+    .logo {
+      font-weight: 700;
+      font-size: 50px;
+    }
 
-  .logo {
-    font-weight: 700;
-    font-size: 50px;
-  }
-
-  ul {
-    li {
-      a {
-        font-size: 25px;
+    ul {
+      li {
+        a {
+          font-size: 25px;
+        }
+        margin-bottom: 30px;
       }
-      margin-bottom: 30px;
+
+      li:last-child {
+        margin-bottom: 0;
+      }
     }
 
-    li:last-child {
-      margin-bottom: 0;
-    }
-  }
-
-  .phone {
-    .number-phone {
-      font-size: 25px;
-      margin-left: 5px;
+    .phone {
+      .number-phone {
+        font-size: 25px;
+        margin-left: 5px;
+      }
     }
   }
 }

@@ -3,13 +3,14 @@
 .container {
   max-width: 1440px;
   padding: 0 138px;
-  margin: 0 auto;
+  margin: 150px auto 0;
 
   h3 {
+    height: 220px;
+
     font-size: 60px;
     color: $green-main;
 
-    margin-bottom: 70px;
     text-align: center;
   }
 

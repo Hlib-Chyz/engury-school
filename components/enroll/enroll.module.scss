@@ -21,27 +21,33 @@
       color: $white;
     }
 
-    button {
-      background-color: #ffffff;
-      color: $green-main;
-
+    a {
       border-radius: 40px;
-      border: none;
-      outline: none;
-
+      margin-top: 338px;
       width: 435px;
       height: 90px;
-      margin-top: 338px;
+      button {
+        display: inline-block;
+        background-color: #ffffff;
+        color: $green-main;
 
-      font-weight: 700;
-      font-size: 35px;
+        border-radius: 40px;
+        border: none;
+        outline: none;
 
-      display: flex;
-      align-items: center;
-      justify-content: center;
+        width: 435px;
+        height: 90px;
 
-      span {
-        margin-right: 21px;
+        font-weight: 700;
+        font-size: 35px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        span {
+          margin-right: 21px;
+        }
       }
     }
   }
