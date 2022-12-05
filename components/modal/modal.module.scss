@@ -33,9 +33,30 @@
       border: none;
 
       cursor: pointer;
+
+      img {
+        width: 25px;
+        height: 25px;
+      }
     }
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
+  .container {
+    .wrapper {
+      .content {
+        border: 1px solid rgba(0, 0, 0, 0.15);
+      }
+      .cross {
+        top: -35px;
+        right: 2px;
+
+        img {
+          width: 22px;
+          height: 22px;
+        }
+      }
+    }
+  }
 }

@@ -9,6 +9,8 @@ import WhyWe from "@components/why-we/why-we";
 import OurCourses from "@components/our-courses/our-courses";
 import Enroll from "@components/enroll/enroll";
 import OurTeachers from "@components/our-teachers/our-teachers";
+import ThankYouModal from "@components/thank-you/thank-you";
+import SomethingWentWrongModal from "@components/something-went-wrong/something-went-wrong";
 
 export default function Home() {
   return (
@@ -27,6 +29,7 @@ export default function Home() {
         <Contacts />
         <Footer />
       </div>
+      <SomethingWentWrongModal />
     </div>
   );
 }

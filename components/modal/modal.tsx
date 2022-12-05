@@ -9,12 +9,7 @@ export default function Modal({ children }: { children: ReactNode }) {
       <div className={styles.wrapper}>
         <div className={styles.content}>{children}</div>
         <button className={styles.cross}>
-          <Image
-            src={crossWhite}
-            width="25"
-            height="25"
-            alt="Teenager Kangaroo"
-          />
+          <Image src={crossWhite} alt="Teenager Kangaroo" />
         </button>
       </div>
     </div>

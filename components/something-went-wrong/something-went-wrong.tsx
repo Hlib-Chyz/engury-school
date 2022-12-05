@@ -6,28 +6,19 @@ import arrowRightWhite from "@images/arrow-right-white.svg";
 
 export default function SomethingWentWrongModal() {
   return (
+    // TODO
     <Modal>
       <div className={styles.container}>
         <div>
           <h3>
-            Щось пішло <br></br> не так !
+            Щось пішло не <br></br> так !
           </h3>
           <button>
             <span>Спробувати іще раз</span>
-            <Image
-              src={arrowRightWhite}
-              alt="Teenager Kangaroo"
-              height="40"
-              width="25"
-            />
+            <Image src={arrowRightWhite} alt="Teenager Kangaroo" />
           </button>
         </div>
-        <Image
-          src={teenagerKangaroo}
-          alt="Teenager Kangaroo"
-          height="578"
-          width="420"
-        />
+        <Image src={teenagerKangaroo} alt="Teenager Kangaroo" />
       </div>
     </Modal>
   );

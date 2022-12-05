@@ -24,4 +24,38 @@
       color: $orange-main;
     }
   }
+
+  img {
+    width: 411px;
+    height: 580px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: auto;
+    height: auto;
+    padding: 58px 30px;
+
+    flex-direction: column;
+    align-items: flex-start;
+
+    section {
+      margin-left: 0;
+      h3 {
+        text-align: center;
+        font-size: 35px;
+
+        margin-bottom: 20px;
+      }
+      p {
+        font-size: 20px;
+      }
+    }
+
+    img {
+      width: 257px;
+      height: 359px;
+    }
+  }
 }
