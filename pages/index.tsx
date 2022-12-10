@@ -1,16 +1,14 @@
 import AboutUs from "@components/about-us/about-us";
-import Header from "@components/header/header";
-import Subheader from "@components/subheader/subheader";
-import Reviews from "@components/reviews/reviews";
-import React from "react";
-import Footer from "@components/footer/footer";
 import Contacts from "@components/contacts/contacts";
-import WhyWe from "@components/why-we/why-we";
-import OurCourses from "@components/our-courses/our-courses";
 import Enroll from "@components/enroll/enroll";
+import Footer from "@components/footer/footer";
+import Header from "@components/header/header";
+import OurCourses from "@components/our-courses/our-courses";
 import OurTeachers from "@components/our-teachers/our-teachers";
-import ThankYouModal from "@components/thank-you/thank-you";
-import SomethingWentWrongModal from "@components/something-went-wrong/something-went-wrong";
+import Reviews from "@components/reviews/reviews";
+import Subheader from "@components/subheader/subheader";
+import WhyWe from "@components/why-we/why-we";
+import React from "react";
 
 export default function Home() {
   return (
@@ -29,7 +27,6 @@ export default function Home() {
         <Contacts />
         <Footer />
       </div>
-      <SomethingWentWrongModal />
     </div>
   );
 }

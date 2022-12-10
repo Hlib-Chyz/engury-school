@@ -16,8 +16,6 @@
   }
 
   .content {
-    position: relative;
-
     .teacher {
       display: flex !important;
       justify-content: space-between;
@@ -44,10 +42,14 @@
 
         .text {
           display: flex;
+          margin-bottom: 56px;
 
           .quotes-right {
             align-self: flex-end;
-            margin-bottom: -16px;
+
+            margin-bottom: -56px;
+
+            transform: rotate(180deg);
           }
 
           p {
@@ -69,8 +71,8 @@
 
         .highlight {
           position: absolute;
-          bottom: -40px;
-          right: -40px;
+          bottom: 0;
+          right: 1px;
 
           display: flex;
           justify-content: center;

@@ -70,12 +70,71 @@ a {
   height: 85px !important;
   width: 85px !important;
 
+  background-color: $orange-main !important;
+  border-radius: 50% !important;
+
+  z-index: 100 !important;
+
   &:before {
-    content: "" !important;
-    color: black !important;
+    content: url(".././images/arrow-right-white.svg") !important;
+
+    display: block !important;
     opacity: 1 !important;
+
+    width: 30px !important;
+    height: 50px !important;
+
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
   }
 
+  &.slick-disabled {
+    &:before {
+      opacity: 0.75 !important;
+    }
+  }
+}
+
+.slick-prev {
+  left: -85px !important;
+  &:before {
+    transform: rotateY(180deg) translate(50%, -50%) !important;
+  }
+}
+
+.slick-next {
+  right: -45px !important;
+}
+
+.slick-dots {
+  height: 6px !important;
+  border-radius: 54px !important;
+
   background-color: $orange-main !important;
-  border-radius: 50%;
+
+  li {
+    height: 14px !important;
+    width: 200px !important;
+    margin: 0 !important;
+
+    button {
+      height: 14px !important;
+      padding: 0 !important;
+      width: 200px !important;
+      background-color: transparent !important;
+      border-radius: 15px !important;
+
+      &:before {
+        content: "" !important;
+      }
+    }
+
+    &.slick-active {
+      button {
+        background-color: $green-main !important;
+      }
+    }
+  }
 }

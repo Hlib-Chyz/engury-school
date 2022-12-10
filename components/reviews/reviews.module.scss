@@ -14,7 +14,13 @@
   }
 
   .reviews {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    .review {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .asd {
+      background-color: violet;
+    }
   }
 }
