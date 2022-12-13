@@ -9,10 +9,15 @@ import Reviews from "@components/reviews/reviews";
 import Subheader from "@components/subheader/subheader";
 import WhyWe from "@components/why-we/why-we";
 import React from "react";
+import Head from "next/head";
 
 export default function Home() {
   return (
     <div className="container">
+      <Head>
+        <title>Engury</title>
+        <link rel="icon" href="logo.svg" />
+      </Head>
       <Header />
       <Subheader />
       <AboutUs />
