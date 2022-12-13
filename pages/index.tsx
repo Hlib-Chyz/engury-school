@@ -19,9 +19,8 @@ export default function Home() {
         <link rel="icon" href="logo.svg" />
       </Head>
       <Header />
-      {/* <Subheader />
       <AboutUs />
-      <div className="wrapper-our-courses">
+      {/* <Subheader /><div className="wrapper-our-courses">
         <WhyWe />
         <OurCourses />
       </div>

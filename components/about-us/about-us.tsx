@@ -5,7 +5,7 @@ import proKangarooWithBook from "@images/pro-kangaroo-with-book.svg";
 export default function AboutUs() {
   return (
     <div className={styles.container}>
-      <div>
+      <div className={styles.img}>
         <Image
           src={proKangarooWithBook}
           width="462"
