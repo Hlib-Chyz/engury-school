@@ -1,0 +1,39 @@
+@import "/styles/variables.scss";
+
+.container {
+  padding: 16px 30px;
+  width: 220px;
+
+  background-color: $green-main;
+
+  position: absolute;
+  z-index: 9999;
+  .logo {
+    display: flex;
+
+    margin-bottom: 40px;
+
+    img {
+      margin-right: 0;
+      height: 30px;
+    }
+  }
+
+  nav {
+    ul {
+      li {
+        margin-bottom: 15px;
+        a {
+          font-size: 25px;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+
+  footer {
+    img {
+      margin-right: 16px;
+    }
+  }
+}

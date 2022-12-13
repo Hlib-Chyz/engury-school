@@ -12,9 +12,11 @@
     align-items: center;
     img {
       margin-right: 16px;
+      height: 56px;
     }
   }
   nav {
+    display: block;
     color: $green-dark;
     ul {
       display: flex;
@@ -27,6 +29,55 @@
           cursor: pointer;
         }
       }
+    }
+  }
+
+  button.open-menu {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    max-width: 600px;
+    padding: 25px 30px 25px;
+
+    display: flex;
+
+    position: relative;
+    .logo {
+      margin-bottom: 0;
+      width: 180px;
+
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+
+      img {
+        margin-right: 0;
+        height: 30px;
+      }
+    }
+
+    button.open-menu {
+      display: inline-block;
+      width: 35px;
+      height: 30px;
+      div {
+        height: 2px;
+        margin-bottom: 10px;
+
+        background-color: $green-main;
+
+        &:last-child {
+          width: 16px;
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    nav {
+      display: none;
     }
   }
 }

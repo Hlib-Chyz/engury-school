@@ -19,7 +19,7 @@ export default function Home() {
         <link rel="icon" href="logo.svg" />
       </Head>
       <Header />
-      <Subheader />
+      {/* <Subheader />
       <AboutUs />
       <div className="wrapper-our-courses">
         <WhyWe />
@@ -31,7 +31,7 @@ export default function Home() {
       <div className="wrapper-contacts-footer">
         <Contacts />
         <Footer />
-      </div>
+      </div> */}
     </div>
   );
 }
