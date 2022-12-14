@@ -20,6 +20,7 @@ export default function Home() {
       </Head>
       <Header />
       <AboutUs />
+      <OurTeachers />
       {/* <Subheader /><div className="wrapper-our-courses">
         <WhyWe />
         <OurCourses />

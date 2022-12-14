@@ -26,6 +26,9 @@ export default function OurTeachers() {
                   src={quotes}
                   alt="Pro Kangaroo"
                 />
+                <div className={styles["teacher-photo"]}>
+                  <Image src={darcy} alt="Pro Kangaroo" />
+                </div>
                 <p>
                   Я викладач з 10-ти річним досвідом роботи . Стосовно
                   особистісного досвіду – я навчалась в університеті
@@ -57,6 +60,9 @@ export default function OurTeachers() {
                   src={quotes}
                   alt="Pro Kangaroo"
                 />
+                <div className={styles["teacher-photo"]}>
+                  <Image src={darcy} alt="Pro Kangaroo" />
+                </div>
                 <p>
                   Я викладач з 10-ти річним досвідом роботи . Стосовно
                   особистісного досвіду – я навчалась в університеті

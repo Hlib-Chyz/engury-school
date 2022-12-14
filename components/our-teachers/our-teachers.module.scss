@@ -37,12 +37,16 @@
 
           color: $black-text;
 
-          margin-bottom: 31px;
+          margin-bottom: 32px;
         }
 
         .text {
           display: flex;
           margin-bottom: 56px;
+
+          .teacher-photo {
+            display: none;
+          }
 
           .quotes-right {
             align-self: flex-end;
@@ -87,6 +91,69 @@
           font-size: 20px;
 
           color: $white;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    max-width: 600px;
+    margin: 75px auto;
+    padding: 0 30px;
+
+    h3 {
+      font-size: 30px;
+
+      text-align: start;
+
+      margin-bottom: 40px;
+    }
+
+    .content {
+      .teacher {
+        .about {
+          h4 {
+            font-size: 25px;
+
+            margin-bottom: 15px;
+          }
+
+          h5 {
+            margin-bottom: 0;
+          }
+
+          .text {
+            display: block;
+            margin-bottom: 0;
+
+            .teacher-photo {
+              display: block;
+              margin: 32px 0 48px;
+              img {
+                width: 300px;
+                height: 300px;
+                border-radius: 50%;
+              }
+            }
+
+            .quotes-right,
+            .quotes-left {
+              display: none;
+            }
+
+            p {
+              font-size: 20px;
+
+              padding: 0;
+              width: 316px;
+            }
+          }
+        }
+
+        .image {
+          display: none;
         }
       }
     }

@@ -112,6 +112,32 @@ a {
   right: -45px !important;
 }
 
+@media (max-width: 600px) {
+  .slick-prev,
+  .slick-next {
+    height: 50px !important;
+    width: 50px !important;
+    &:before {
+      width: 16px !important;
+      height: 30px !important;
+      top: 50% !important;
+      left: 50% !important;
+      transform: translate(-50%, -50%) !important;
+    }
+  }
+
+  .slick-prev {
+    left: -12px !important;
+    &:before {
+      transform: rotateY(180deg) translate(50%, -50%) !important;
+    }
+  }
+
+  .slick-next {
+    right: -12px !important;
+  }
+}
+
 .slick-dots {
   height: 6px !important;
   border-radius: 54px !important;
