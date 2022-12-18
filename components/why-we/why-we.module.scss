@@ -25,3 +25,19 @@
     margin-top: 29px;
   }
 }
+
+@media (max-width: 600px) {
+  .container {
+    max-width: 600px;
+    padding: 0 75px;
+
+    h3 {
+      font-size: 30px;
+      text-align: start;
+    }
+
+    .reasons {
+      margin-top: 0;
+    }
+  }
+}

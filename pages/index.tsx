@@ -21,17 +21,18 @@ export default function Home() {
       <Header />
       <Subheader />
       <AboutUs />
+      <WhyWe />
+      {/*
       <div className="wrapper-our-courses">
-        <WhyWe />
         <OurCourses />
       </div>
       <Enroll />
-      <OurTeachers />
+      <OurTeachers /> */}
       {/* <Reviews />  */}
-      <div className="wrapper-contacts-footer">
+      {/* <div className="wrapper-contacts-footer">
         <Contacts />
         <Footer />
-      </div>
+      </div> */}
     </div>
   );
 }

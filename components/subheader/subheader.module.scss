@@ -13,6 +13,10 @@
     margin: 50px auto 0;
     padding: 0 108px 0 208px;
 
+    .kangaroo-words {
+      display: none;
+    }
+
     .text {
       h1 {
         font-style: normal;
@@ -115,6 +119,104 @@
       width: 185px;
 
       font-size: 18px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .wrapper {
+    background-color: transparent;
+    .container {
+      position: relative;
+      overflow: hidden;
+
+      display: block;
+
+      max-width: 600px;
+      margin: 0 auto 75px;
+      padding: 75px 30px 0;
+
+      .kangaroo-words {
+        width: 109px;
+        height: 90px;
+
+        background-image: url("data:image/svg+xml,%3Csvg width='109' height='91' viewBox='0 0 109 91' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M108.617 39.75C108.617 50.5746 102.603 60.4075 92.8118 67.5484C83.0215 74.6891 69.4774 79.1174 54.5 79.1174C39.5226 79.1174 25.9785 74.6891 16.1882 67.5484C6.39746 60.4075 0.382639 50.5746 0.382639 39.75C0.382639 28.9255 6.39746 19.0926 16.1882 11.9517C25.9785 4.81097 39.5226 0.382639 54.5 0.382639C69.4774 0.382639 83.0215 4.81097 92.8118 11.9517C102.603 19.0926 108.617 28.9255 108.617 39.75Z' fill='%23D17340' stroke='%23D17340' stroke-width='0.765279'/%3E%3Cpath d='M96.0914 90C86.7138 84.5077 83.0298 80.9646 85.3348 72C82.2562 73.7785 78.6323 75.1192 69.5591 78C76.8346 87.3812 83.1164 89.3033 96.0914 90Z' fill='%23D17340' stroke='%23D17340' stroke-width='0.765279' stroke-linecap='round'/%3E%3C/svg%3E%0A");
+        display: flex;
+        justify-content: center;
+
+        position: absolute;
+        top: 0;
+        right: 10px;
+        z-index: 2000;
+
+        p {
+          font-weight: 700;
+          font-size: 12px;
+          color: $white;
+
+          width: 49px;
+          margin-top: 19px;
+        }
+      }
+
+      .text {
+        z-index: 2;
+
+        h1 {
+          display: inline;
+          margin-bottom: 0;
+
+          color: $green-main;
+          background-color: rgba(255, 255, 255, 0.6);
+          border-radius: 27px;
+          width: auto;
+        }
+        a {
+          margin-top: 60px;
+          border-radius: 40px;
+          display: inline-block;
+          button {
+            background-color: $green-main;
+            color: $white;
+
+            border-radius: 30px;
+
+            width: 330px;
+            height: 70px;
+
+            font-size: 22px;
+
+            img {
+              width: 18px;
+              height: 30px;
+            }
+
+            span {
+              margin-right: 17px;
+            }
+          }
+        }
+      }
+
+      .kangaroo {
+        img {
+          position: absolute;
+          top: 110px;
+          right: -71px;
+          z-index: -1;
+
+          width: 329px;
+          height: 423px;
+        }
+      }
+
+      .plate-1,
+      .plate-2,
+      .plate-3,
+      .england-flag,
+      .spanish-flag {
+        display: none;
+      }
     }
   }
 }

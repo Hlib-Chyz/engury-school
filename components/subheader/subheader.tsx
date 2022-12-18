@@ -27,13 +27,16 @@ export default function Subheader() {
             </button>
           </Link>
         </div>
-        <div>
+        <div className={styles.kangaroo}>
           <Image
             src={teenagerKangarooWithPhone}
             width="471"
             height="606"
             alt="Teenager Kangaroo"
           />
+        </div>
+        <div className={styles["kangaroo-words"]}>
+          <p>Hi! It`s Engury School!</p>
         </div>
         <div className={styles["england-flag"]}>
           <Image

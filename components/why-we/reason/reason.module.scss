@@ -20,3 +20,21 @@
     color: $green-main;
   }
 }
+
+@media (max-width: 600px) {
+  .container {
+    border-radius: 48px;
+
+    width: 266px;
+    height: 145px;
+    margin-top: 30px;
+
+    img {
+      height: 70px;
+    }
+
+    .text {
+      font-size: 18px;
+    }
+  }
+}
