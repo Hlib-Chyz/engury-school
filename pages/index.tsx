@@ -19,19 +19,19 @@ export default function Home() {
         <link rel="icon" href="logo.svg" />
       </Head>
       <Header />
+      <Subheader />
       <AboutUs />
-      <OurTeachers />
-      {/* <Subheader /><div className="wrapper-our-courses">
+      <div className="wrapper-our-courses">
         <WhyWe />
         <OurCourses />
       </div>
       <Enroll />
       <OurTeachers />
-      <Reviews />
+      {/* <Reviews />  */}
       <div className="wrapper-contacts-footer">
         <Contacts />
         <Footer />
-      </div> */}
+      </div>
     </div>
   );
 }

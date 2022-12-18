@@ -61,6 +61,7 @@ a {
   background-image: url(".././images/footer-background.svg");
   background-position: center;
   background-repeat: no-repeat;
+  height: 1000px;
 }
 
 .wrapper-our-courses {
@@ -84,9 +85,6 @@ a {
 
     display: block !important;
     opacity: 1 !important;
-
-    width: 30px !important;
-    height: 50px !important;
 
     position: absolute !important;
     top: 50% !important;
@@ -135,36 +133,5 @@ a {
 
   .slick-next {
     right: -12px !important;
-  }
-}
-
-.slick-dots {
-  height: 6px !important;
-  border-radius: 54px !important;
-
-  background-color: $orange-main !important;
-
-  li {
-    height: 14px !important;
-    width: 200px !important;
-    margin: 0 !important;
-
-    button {
-      height: 14px !important;
-      padding: 0 !important;
-      width: 200px !important;
-      background-color: transparent !important;
-      border-radius: 15px !important;
-
-      &:before {
-        content: "" !important;
-      }
-    }
-
-    &.slick-active {
-      button {
-        background-color: $green-main !important;
-      }
-    }
   }
 }

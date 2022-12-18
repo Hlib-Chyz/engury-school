@@ -2,9 +2,18 @@ import styles from "./footer.module.scss";
 import Image from "next/image";
 import phone from "@images/phone.svg";
 
-export default function Footer() {
+export default function Footer({
+  hasBackground = false,
+}: {
+  hasBackground?: boolean;
+}) {
   return (
-    <div className={styles.wrapper}>
+    <div
+      className={styles.wrapper}
+      style={{
+        backgroundColor: hasBackground ? "#50603B" : "transparent",
+      }}
+    >
       <div className={styles.container}>
         <div className={styles.logo}>ENGORY</div>
         <div>

@@ -10,7 +10,6 @@ export default function Header({ isOrange }: { isOrange?: boolean }) {
   return (
     <>
       {isOpenMenu ? <Menu /> : null}
-
       <div className={styles.container}>
         <button
           onClick={() => setOpenMenu(!isOpenMenu)}

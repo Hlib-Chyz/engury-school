@@ -1,6 +1,5 @@
 import Review from "@components/reviews/review/review";
 import React from "react";
-import Slider from "react-slick";
 import styles from "./reviews.module.scss";
 
 export default function Reviews() {
@@ -41,30 +40,16 @@ export default function Reviews() {
     <div className={styles.container}>
       <h3>Відгуки учнів</h3>
       <div className={styles.reviews}>
-        <Slider
-          infinite={false}
-          speed={500}
-          slidesToShow={1}
-          slidesToScroll={1}
-          dots={true}
-          arrows={false}
-          customPaging={(i) => <div className={styles.asd}>asd</div>}
-        >
-          <div>
-            <div className={styles.review}>
-              {reviews.map((review) => (
-                <Review review={review} key={review.name} />
-              ))}
-            </div>
-          </div>
-          <div>
-            <div className={styles.review}>
-              {reviews.map((review) => (
-                <Review review={review} key={review.name} />
-              ))}
-            </div>
-          </div>
-        </Slider>
+        <div className={styles.slide}>
+          {reviews.map((review) => (
+            <Review review={review} key={review.name} />
+          ))}
+        </div>
+        <div className={styles.slide}>
+          {reviews.map((review) => (
+            <Review review={review} key={review.name} />
+          ))}
+        </div>
       </div>
     </div>
   );

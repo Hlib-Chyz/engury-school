@@ -2,10 +2,9 @@
 
 .wrapper {
   background-color: $green-main;
+  border-bottom-right-radius: 288px;
   .container {
     position: relative;
-
-    border-bottom-right-radius: 288px;
 
     display: flex;
     align-items: center;

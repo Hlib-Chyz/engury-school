@@ -7,6 +7,7 @@
   input {
     width: 0;
     height: 0;
+    cursor: pointer;
 
     &:after {
       content: "";
@@ -25,12 +26,14 @@
 
     &:checked {
       &:before {
-        content: url("/images/check-mark.svg");
+        content: "";
+        background-image: url("data:image/svg+xml,%3Csvg width='10' height='8' viewBox='0 0 10 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 4L3.71186 7L9 1' stroke='white' stroke-linecap='round'/%3E%3C/svg%3E%0A");
+        background-repeat: no-repeat;
+        background-position: center;
         display: block;
 
-        width: 8px;
-        height: 6px;
-
+        width: 20px;
+        height: 20px;
         position: absolute;
         z-index: 100;
         top: 50%;

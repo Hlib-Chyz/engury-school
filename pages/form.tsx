@@ -1,5 +1,5 @@
 import Header from "@components/header/header";
-import React from "react";
+import React, { useState } from "react";
 import arrowRightGreen from "@images/arrow-right-green.svg";
 import arrowRightWhite from "@images/arrow-right-white.svg";
 import palmChekIn from "@images/palm-chek-in.svg";
@@ -10,7 +10,15 @@ import Input from "@components/input/input";
 import Radiobutton from "@components/radiobutton/radiobutton";
 import Checkbox from "@components/checkbox/checkbox";
 
+export const enum Languages {
+  Eng = "English",
+  Span = "Spanish",
+}
+
 export default function Form() {
+  const [language, setLanguage] = useState<Languages>(Languages.Eng);
+  const [isAccept, setAccept] = useState<boolean>(false);
+
   return (
     <div className="container">
       <Header isOrange={true} />
@@ -35,12 +43,28 @@ export default function Form() {
         <h4>Записатися на онлайн курс з іноземної мови! </h4>
         <div className={styles.languages}>
           <div>
-            <Radiobutton />
-            <label className={styles["languages-label"]}>Англійська мова</label>
+            <Radiobutton
+              isActive={language === Languages.Eng}
+              setActive={() => setLanguage(Languages.Eng)}
+            />
+            <label
+              onClick={() => setLanguage(Languages.Eng)}
+              className={styles["languages-label"]}
+            >
+              Англійська мова
+            </label>
           </div>
           <div>
-            <Radiobutton />
-            <label className={styles["languages-label"]}>Іспанська мова</label>
+            <Radiobutton
+              isActive={language === Languages.Span}
+              setActive={() => setLanguage(Languages.Span)}
+            />
+            <label
+              onClick={() => setLanguage(Languages.Span)}
+              className={styles["languages-label"]}
+            >
+              Іспанська мова
+            </label>
           </div>
         </div>
         <div className={styles.inputs}>
@@ -54,9 +78,12 @@ export default function Form() {
           </div>
         </div>
         <div className={styles.checkbox}>
-          <Checkbox />
-          <label className={styles["label-checkbox"]}>
-            Я принимаю , обработку и хранение персональных данных
+          <Checkbox checked={isAccept} setChecked={setAccept} />
+          <label
+            className={styles["label-checkbox"]}
+            onClick={() => setAccept(!isAccept)}
+          >
+            Я принимаю, обработку и хранение персональных данных
           </label>
         </div>
         <button>
@@ -69,7 +96,7 @@ export default function Form() {
           />
         </button>
       </div>
-      <Footer />
+      <Footer hasBackground={true} />
     </div>
   );
 }
