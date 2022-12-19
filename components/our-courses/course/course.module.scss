@@ -149,3 +149,99 @@
     }
   }
 }
+
+@media (max-width: 600px) {
+  .container {
+    padding: 52px 32px;
+
+    border-radius: 25px;
+
+    h4 {
+      font-size: 35px;
+    }
+
+    .level {
+      display: flex;
+      align-items: flex-start;
+
+      label {
+        font-size: 15px;
+
+        margin-right: 35px;
+      }
+
+      .line-of-level {
+        .line-0,
+        .line-1,
+        .line-2 {
+          width: 180px;
+          border-radius: 12px;
+
+          &:before {
+            border-radius: 12px;
+          }
+        }
+
+        .line-0 {
+          &:before {
+            width: 60px;
+          }
+        }
+        .line-1 {
+          &:before {
+            width: 120px;
+          }
+        }
+        .line-2 {
+          &:before {
+            width: 180px;
+          }
+        }
+
+        .levels {
+          font-size: 14px;
+
+          margin-top: 3px;
+          .a1 {
+            margin-left: 5px;
+          }
+          .b1,
+          .b2 {
+            margin-left: 37px;
+          }
+        }
+      }
+    }
+
+    .price {
+      margin: 32px 0;
+
+      div {
+        font-size: 20px;
+      }
+    }
+
+    .what-have {
+      li {
+        font-size: 15px;
+
+        margin-bottom: 7px;
+        &:before {
+          margin-right: 10px;
+        }
+      }
+    }
+    a {
+      border-radius: 9px;
+
+      button {
+        width: 220px;
+        height: 56px;
+
+        font-size: 16px;
+
+        border-radius: 9px;
+      }
+    }
+  }
+}

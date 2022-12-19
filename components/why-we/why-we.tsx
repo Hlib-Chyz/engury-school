@@ -42,18 +42,9 @@ export default function WhyWe() {
         <span>Why</span> обирають саме нас?
       </h3>
       <div className={styles.reasons}>
-        <Slider
-          infinite={false}
-          speed={500}
-          slidesToShow={2}
-          slidesToScroll={2}
-          arrows={false}
-          dots={true}
-        >
-          {whyWe.map((reason: { image: string; text: string }) => (
-            <Reason reason={reason} key={reason.text} />
-          ))}
-        </Slider>
+        {whyWe.map((reason: { image: string; text: string }) => (
+          <Reason reason={reason} key={reason.text} />
+        ))}
       </div>
     </div>
   );

@@ -10,6 +10,7 @@ import Subheader from "@components/subheader/subheader";
 import WhyWe from "@components/why-we/why-we";
 import React from "react";
 import Head from "next/head";
+import FooterForMobile from "@components/footer-for-mobile/footer-for-mobile";
 
 export default function Home() {
   return (
@@ -22,6 +23,12 @@ export default function Home() {
       <Subheader />
       <AboutUs />
       <WhyWe />
+      <div className="wrapper-our-courses">
+        <OurCourses />
+      </div>
+      <Enroll />
+      <OurTeachers />
+      <FooterForMobile />
       {/*
       <div className="wrapper-our-courses">
         <OurCourses />
