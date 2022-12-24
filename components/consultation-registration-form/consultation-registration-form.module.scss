@@ -42,6 +42,8 @@
     div {
       display: flex;
       align-items: center;
+
+      margin-bottom: 9px;
       .languages-label {
         font-size: 35px;
         color: $green-dark;
@@ -100,6 +102,99 @@
 
       font-weight: 700;
       font-size: 25px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    max-width: 600px;
+    margin-top: 30px;
+    padding: 0 30px;
+    position: relative;
+
+    overflow: hidden;
+    .palm {
+      top: 0;
+      right: -60px;
+
+      width: 206px;
+      height: 240px;
+
+      transform: rotate(15deg);
+
+      z-index: -10;
+    }
+
+    .bread-crumbs {
+      font-size: 11px;
+
+      img {
+        margin: 0 4px;
+        width: 6px;
+        height: 8px;
+      }
+    }
+
+    h4 {
+      font-size: 25px;
+
+      margin: 40px 0;
+    }
+
+    .languages {
+      margin-bottom: 30px;
+      div {
+        margin-bottom: 15px;
+        .languages-label {
+          font-size: 25px;
+
+          margin-left: 6px;
+        }
+      }
+    }
+
+    .inputs {
+      div {
+        display: flex;
+        flex-direction: column;
+
+        input {
+          margin: 0 0 25px;
+        }
+
+        &:first-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .checkbox {
+      margin: 5px 0 30px;
+
+      align-items: flex-start;
+      .label-checkbox {
+        margin-left: 11px;
+      }
+    }
+
+    button {
+      width: 330px;
+      height: 66px;
+      margin-bottom: 50px;
+
+      border-radius: 30px;
+
+      span {
+        margin-right: 14px;
+
+        font-size: 19px;
+      }
+
+      img {
+        width: 20px;
+        height: 30px;
+      }
     }
   }
 }
