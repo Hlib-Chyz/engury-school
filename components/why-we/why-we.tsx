@@ -37,15 +37,47 @@ export default function WhyWe() {
     },
   ];
   return (
-    <div className={styles.container}>
-      <h3>
-        <span>Why</span> обирають саме нас?
-      </h3>
-      <div className={styles.reasons}>
-        {whyWe.map((reason: { image: string; text: string }) => (
-          <Reason reason={reason} key={reason.text} />
-        ))}
+    <>
+      <div className={styles.container}>
+        <h3>
+          <span>Why</span> обирають саме нас?
+        </h3>
+        <div className={styles.reasons}>
+          {whyWe.map((reason: { image: string; text: string }) => (
+            <Reason reason={reason} key={reason.text} />
+          ))}
+        </div>
       </div>
-    </div>
+      <div className={styles["container-mobile"]}>
+        <h3>
+          <span>Why</span> обирають саме нас?
+        </h3>
+        <div className={styles.reasons}>
+          <Slider
+            infinite={false}
+            speed={500}
+            slidesToShow={1}
+            slidesToScroll={1}
+            arrows={false}
+            dots={true}
+            variableWidth={true}
+            centerMode={true}
+          >
+            <div className={styles["item-of-slider"]}>
+              <Reason reason={whyWe[0]} key={whyWe[0].text} />
+              <Reason reason={whyWe[1]} key={whyWe[1].text} />
+            </div>
+            <div className={styles["item-of-slider"]}>
+              <Reason reason={whyWe[2]} key={whyWe[2].text} />
+              <Reason reason={whyWe[3]} key={whyWe[3].text} />
+            </div>
+            <div className={styles["item-of-slider"]}>
+              <Reason reason={whyWe[4]} key={whyWe[4].text} />
+              <Reason reason={whyWe[5]} key={whyWe[5].text} />
+            </div>
+          </Slider>
+        </div>
+      </div>
+    </>
   );
 }

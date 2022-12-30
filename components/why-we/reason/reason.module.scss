@@ -1,40 +1,44 @@
 @import "/styles/variables.scss";
+.wrapper {
+  .container {
+    background-color: $white;
+    box-shadow: 0px 10px 50px rgba(80, 96, 58, 0.2);
+    border-radius: 62px;
 
-.container {
-  background-color: $white;
-  box-shadow: 0px 10px 50px rgba(80, 96, 58, 0.2);
-  border-radius: 62px;
+    width: 345px;
+    height: 190px;
+    margin-top: 45px;
 
-  width: 345px;
-  height: 190px;
-  margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    .text {
+      font-size: 25px;
 
-  .text {
-    font-size: 25px;
-
-    color: $green-main;
+      color: $green-main;
+    }
   }
 }
 
 @media (max-width: 600px) {
-  .container {
-    border-radius: 48px;
+  .wrapper {
+    padding: 15px 10px;
+    .container {
+      border-radius: 48px;
 
-    width: 266px;
-    height: 145px;
-    margin-top: 30px;
+      width: 266px;
+      height: 145px;
+      margin-bottom: 0;
 
-    img {
-      height: 70px;
-    }
+      img {
+        height: 70px;
+      }
 
-    .text {
-      font-size: 18px;
+      .text {
+        font-size: 18px;
+      }
     }
   }
 }

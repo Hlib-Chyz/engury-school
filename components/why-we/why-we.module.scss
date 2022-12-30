@@ -1,5 +1,9 @@
 @import "/styles/variables.scss";
 
+.container-mobile {
+  display: none;
+}
+
 .container {
   max-width: 1440px;
   margin: 0 auto;
@@ -27,17 +31,38 @@
 }
 
 @media (max-width: 600px) {
-  .container {
+  .container-mobile {
+    display: block;
+
     max-width: 600px;
-    padding: 0 75px;
+    margin: 0 auto;
+    padding: 0;
 
     h3 {
       font-size: 30px;
+
+      color: $green-main;
+
       text-align: start;
+
+      padding: 0 30px;
+      span {
+        color: $orange-main;
+      }
     }
 
     .reasons {
-      margin-top: 0;
+      width: calc(100% + 60px);
+      .item-of-slider {
+        margin: 30px auto;
+        div {
+          margin: 0 auto;
+        }
+      }
     }
+  }
+
+  .container {
+    display: none;
   }
 }

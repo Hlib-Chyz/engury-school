@@ -135,3 +135,35 @@ a {
     right: -12px !important;
   }
 }
+
+.slick-dots {
+  bottom: 0 !important;
+  li {
+    width: 10px !important;
+    height: 10px !important;
+    margin: 0 2px !important;
+    button {
+      width: 10px !important;
+      height: 10px !important;
+      padding: 0 !important;
+
+      &:before {
+        line-height: 10px !important;
+        font-size: 10px !important;
+
+        width: 10px !important;
+        height: 10px !important;
+
+        color: $green-main !important;
+        opacity: 0.6 !important;
+      }
+    }
+    &.slick-active {
+      button {
+        &:before {
+          opacity: 1 !important;
+        }
+      }
+    }
+  }
+}
