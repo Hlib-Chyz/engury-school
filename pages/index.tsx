@@ -28,6 +28,7 @@ export default function Home() {
       </div>
       <Enroll />
       <OurTeachers />
+      <Reviews />
       <FooterForMobile />
       {/*
       <div className="wrapper-our-courses">

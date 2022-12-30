@@ -62,6 +62,7 @@ export default function WhyWe() {
             dots={true}
             variableWidth={true}
             centerMode={true}
+            initialSlide={1}
           >
             <div className={styles["item-of-slider"]}>
               <Reason reason={whyWe[0]} key={whyWe[0].text} />
