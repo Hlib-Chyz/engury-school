@@ -29,18 +29,13 @@ export default function Home() {
       <Enroll />
       <OurTeachers />
       <Reviews />
-      <FooterForMobile />
-      {/*
-      <div className="wrapper-our-courses">
-        <OurCourses />
+      <div className="wrapper-footer-for-mobile">
+        <FooterForMobile />
       </div>
-      <Enroll />
-      <OurTeachers /> */}
-      {/* <Reviews />  */}
-      {/* <div className="wrapper-contacts-footer">
+      <div className="wrapper-contacts-footer">
         <Contacts />
         <Footer />
-      </div> */}
+      </div>
     </div>
   );
 }

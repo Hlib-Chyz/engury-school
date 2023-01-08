@@ -1,18 +1,19 @@
 import React from "react";
 import styles from "./review.module.scss";
-import Image from "next/image";
 
 export default function Review({
   review,
+  index,
 }: {
   review: {
     name: string;
     date: string;
     text: string;
   };
+  index: number;
 }) {
   return (
-    <div className={styles.wrapper}>
+    <div style={{ margin: index % 2 === 0 ? "75px 0 30px" : "0 0 75px" }}>
       <div className={styles.container}>
         <div className={styles.top}>
           <div className={styles.image}>
@@ -23,7 +24,9 @@ export default function Review({
             <div className={styles.date}>{review.date}</div>
           </div>
         </div>
-        <div className={styles.text}>{review.text}</div>
+        <div className={styles["wrapper-text"]}>
+          <div className={styles.text}>{review.text}</div>
+        </div>
       </div>
     </div>
   );

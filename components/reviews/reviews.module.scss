@@ -11,3 +11,16 @@
     text-align: center;
   }
 }
+
+@media (max-width: 600px) {
+  .container {
+    max-width: 600px;
+    padding: 0 30px;
+    margin: 0 auto;
+    h3 {
+      font-size: 30px;
+
+      color: $green-main;
+    }
+  }
+}

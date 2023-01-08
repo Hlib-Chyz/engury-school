@@ -57,11 +57,27 @@ a {
   margin: 0 auto;
 }
 
+.wrapper-footer-for-mobile {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .wrapper-footer-for-mobile {
+    display: block;
+  }
+}
+
 .wrapper-contacts-footer {
   background-image: url(".././images/footer-background.svg");
   background-position: center;
   background-repeat: no-repeat;
   height: 1000px;
+}
+
+@media (max-width: 600px) {
+  .wrapper-contacts-footer {
+    display: none;
+  }
 }
 
 .wrapper-our-courses {

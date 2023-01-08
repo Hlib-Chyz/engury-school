@@ -79,8 +79,12 @@ export default function Reviews() {
         arrows={false}
         dots={true}
       >
-        {reviews.map((review) => (
-          <Review review={review} key={review.name} />
+        {reviews.map((review, index: number) => (
+          <Review
+            review={review}
+            index={index}
+            key={review.name + review.text}
+          />
         ))}
       </Slider>
     </div>

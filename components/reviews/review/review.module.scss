@@ -1,56 +1,90 @@
 @import "/styles/variables.scss";
 
-.wrapper {
-  .container {
-    width: 368px;
-    height: 196px;
+.container {
+  width: 368px;
+  height: 196px;
+  margin: 0 auto;
 
-    border-radius: 32px;
-    padding: 21px;
+  border-radius: 32px;
+  padding: 21px;
 
-    background-color: $white;
-    box-shadow: 0px 10.2195px 51.0975px rgba(80, 96, 58, 0.2);
+  background-color: $white;
+  box-shadow: 0px 10.2195px 51.0975px rgba(80, 96, 58, 0.2);
 
-    .top {
-      display: flex;
+  .top {
+    display: flex;
 
-      .image {
-        width: 90px;
-        height: 90px;
+    .image {
+      width: 90px;
+      height: 90px;
 
-        border-radius: 50%;
+      border-radius: 50%;
 
-        background-color: black;
-      }
-
-      .info {
-        margin-left: 30px;
-        .name {
-          margin-bottom: 5px;
-
-          font-size: 31px;
-          color: $green-dark;
-        }
-        .date {
-          font-size: 21px;
-
-          color: $black-text;
-        }
-      }
+      background-color: black;
     }
 
+    .info {
+      margin-left: 30px;
+      .name {
+        margin-bottom: 5px;
+
+        font-size: 31px;
+        color: $green-dark;
+      }
+      .date {
+        font-size: 21px;
+
+        color: $black-text;
+      }
+    }
+  }
+
+  .wrapper-text {
+    height: 64px;
+    margin-top: 16px;
     .text {
+      max-height: 54px;
       font-size: 20px;
 
       color: $black-text;
 
-      display: flex;
-      align-items: center;
+      overflow: hidden;
+    }
+  }
+}
 
-      height: 50%;
+@media (max-width: 600px) {
+  .container {
+    width: 275px;
+    height: 225px;
 
-      overflow: auto;
-      text-overflow: clip;
+    border-radius: 24px;
+    padding: 10px 15px;
+
+    .top {
+      .image {
+        width: 105px;
+        height: 105px;
+      }
+
+      .info {
+        margin-left: 15px;
+        .name {
+          margin-bottom: 8px;
+
+          font-size: 25px;
+        }
+        .date {
+          font-size: 15px;
+        }
+      }
+    }
+
+    .wrapper-text {
+      height: 84px;
+      .text {
+        max-height: 79px;
+      }
     }
   }
 }
