@@ -72,14 +72,14 @@ export default function ConsultationRegistrationForm() {
         </div>
       </div>
       <div className={styles.inputs}>
-        <div>
+        {/* <div>
           <Input value={name} onChange={nameHandler} placeholder="Ваше ім’я" />
           <Input placeholder="Ваше прізвище" />
         </div>
         <div>
           <Input placeholder="Email" />
           <Input placeholder="Ваш телефон" />
-        </div>
+        </div> */}
       </div>
       <div className={styles.checkbox}>
         <Checkbox checked={isAccept} setChecked={setAccept} />
