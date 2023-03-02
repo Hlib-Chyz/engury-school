@@ -8,32 +8,48 @@ import OurTeachers from "@components/our-teachers/our-teachers";
 import Reviews from "@components/reviews/reviews";
 import Subheader from "@components/subheader/subheader";
 import WhyWe from "@components/why-we/why-we";
-import React from "react";
+import React, { useRef } from "react";
 import Head from "next/head";
 import FooterForMobile from "@components/footer-for-mobile/footer-for-mobile";
 
 export default function Home() {
+  const teachersRef = useRef<HTMLDivElement>(null);
+  const tariffsRef = useRef<HTMLDivElement>(null);
+  const aboutUsRef = useRef<HTMLDivElement>(null);
+  const reviewsRef = useRef<HTMLDivElement>(null);
+  const contactsRef = useRef<HTMLDivElement>(null);
+
   return (
     <div className="container">
       <Head>
         <title>Engury</title>
         <link rel="icon" href="logo.svg" />
       </Head>
-      <Header />
+      <Header
+        refs={{ teachersRef, tariffsRef, aboutUsRef, reviewsRef, contactsRef }}
+      />
       <Subheader />
-      <AboutUs />
+      <div ref={aboutUsRef}>
+        <AboutUs />
+      </div>
       <WhyWe />
-      <div className="wrapper-our-courses">
+      <div ref={tariffsRef} className="wrapper-our-courses">
         <OurCourses />
       </div>
       <Enroll />
-      <OurTeachers />
-      <Reviews />
+      <div ref={teachersRef}>
+        <OurTeachers />
+      </div>
+      <div ref={reviewsRef}>
+        <Reviews />
+      </div>
       <div className="wrapper-footer-for-mobile">
         <FooterForMobile />
       </div>
       <div className="wrapper-contacts-footer">
-        <Contacts />
+        <div ref={contactsRef}>
+          <Contacts />
+        </div>
         <Footer />
       </div>
     </div>

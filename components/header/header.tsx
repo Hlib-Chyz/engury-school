@@ -4,8 +4,15 @@ import logo from "@images/logo.svg";
 import logoText from "@images/logo-text.svg";
 import React, { useEffect, useState } from "react";
 import Menu from "@components/header/components/menu/menu";
+import Link from "next/link";
 
-export default function Header({ isOrange }: { isOrange?: boolean }) {
+export default function Header({
+  isOrange,
+  refs,
+}: {
+  isOrange?: boolean;
+  refs: any;
+}) {
   const [isOpenMenu, setOpenMenu] = useState(false);
   return (
     <>
@@ -19,26 +26,68 @@ export default function Header({ isOrange }: { isOrange?: boolean }) {
           <div></div>
           <div></div>
         </button>
-        <div className={styles.logo}>
-          <Image src={logo} alt="arrowRightGreen" />
-          <Image src={logoText} alt="arrowRightGreen" />
-        </div>
+        <Link href="/">
+          <div className={styles.logo}>
+            <Image src={logo} alt="arrowRightGreen" />
+            <Image src={logoText} alt="arrowRightGreen" />
+          </div>
+        </Link>
         <nav style={isOrange ? { color: "#d17340" } : {}}>
           <ul>
             <li>
-              <a>Про нас</a>
+              <a
+                onClick={() =>
+                  refs.aboutUsRef.current?.scrollIntoView({
+                    behavior: "smooth",
+                  })
+                }
+              >
+                Про нас
+              </a>
             </li>
             <li>
-              <a>Курси</a>
+              <a
+                onClick={() =>
+                  refs.tariffsRef.current?.scrollIntoView({
+                    behavior: "smooth",
+                  })
+                }
+              >
+                Курси
+              </a>
             </li>
             <li>
-              <a>Викладачі</a>
+              <a
+                onClick={() =>
+                  refs.teachersRef.current?.scrollIntoView({
+                    behavior: "smooth",
+                  })
+                }
+              >
+                Викладачі
+              </a>
             </li>
             <li>
-              <a>Відгуки</a>
+              <a
+                onClick={() =>
+                  refs.reviewsRef.current?.scrollIntoView({
+                    behavior: "smooth",
+                  })
+                }
+              >
+                Відгуки
+              </a>
             </li>
             <li>
-              <a>Контакти</a>
+              <a
+                onClick={() =>
+                  refs.contactsRef.current?.scrollIntoView({
+                    behavior: "smooth",
+                  })
+                }
+              >
+                Контакти
+              </a>
             </li>
           </ul>
         </nav>
