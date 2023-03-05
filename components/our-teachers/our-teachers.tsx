@@ -15,6 +15,7 @@ export default function OurTeachers() {
           speed={500}
           slidesToShow={1}
           slidesToScroll={1}
+          dots={true}
         >
           <div className={styles.teacher}>
             <section className={styles.about}>

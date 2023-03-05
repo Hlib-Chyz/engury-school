@@ -4,7 +4,7 @@
   display: flex;
 
   max-width: 1440px;
-  margin: 150px auto;
+  margin: var(--desktopMargin) auto;
   padding: 0 138px;
 
   section {
@@ -76,7 +76,7 @@
     flex-direction: column-reverse;
 
     max-width: 600px;
-    margin: 75px auto;
+    margin: var(--mobileMargin) auto;
     padding: 0 30px;
 
     .img {

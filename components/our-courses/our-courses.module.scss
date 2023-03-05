@@ -2,7 +2,7 @@
 
 .container {
   max-width: 1440px;
-  margin: 150px auto;
+  margin: var(--desktopMargin) auto;
 
   display: flex;
   flex-direction: column;
@@ -104,7 +104,7 @@
 
 @media (max-width: 600px) {
   .container {
-    margin: 75px auto;
+    margin: var(--mobileMargin) auto;
 
     overflow: hidden;
     h3 {

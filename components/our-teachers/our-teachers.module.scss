@@ -2,7 +2,7 @@
 
 .container {
   max-width: 1440px;
-  margin: 150px auto;
+  margin: var(--desktopMargin) auto;
   padding: 0 138px;
 
   h3 {
@@ -70,6 +70,7 @@
       .image {
         position: relative;
         img {
+          margin-right: 1px;
           border-radius: 50%;
         }
 
@@ -100,7 +101,7 @@
 @media (max-width: 600px) {
   .container {
     max-width: 600px;
-    margin: 75px auto;
+    margin: var(--mobileMargin) auto;
     padding: 0 30px;
 
     h3 {

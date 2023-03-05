@@ -3,10 +3,10 @@
 .container {
   max-width: 1440px;
   padding: 56px 138px 0;
-  margin: 150px auto 0;
+  margin: var(--desktopMargin) auto 0;
 
   h3 {
-    margin-bottom: 75px;
+    margin-bottom: var(--mobileMargin);
 
     font-size: 60px;
     color: $green-main;
